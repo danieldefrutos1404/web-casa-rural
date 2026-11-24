@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Casa Rural El Mirador</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+    <header>
+        <h1>Casa Rural El Mirador</h1>
+        <p>Solicita disponibilidad o resuelve tus dudas</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="informacion.html">Información y Tarifas</a></li>
+            <li><a href="contacto.html" class="activo">Contacto y Reservas</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="bloque-verde">
+            <h2>Formulario de reserva</h2>
+            <p>Rellena tus datos y te responderemos en menos de 24 horas para confirmar las fechas.</p>
+
+            <form action="#" method="post" class="formulario">
+                <label for="nombre">Nombre y apellidos:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Ej. Carlos García" required>
+
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" placeholder="ejemplo@correo.com" required>
+
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" placeholder="600 000 000">
+
+                <label for="entrada">Fecha de entrada:</label>
+                <input type="date" id="entrada" name="entrada" required>
+
+                <label for="personas">Número de huéspedes:</label>
+                <select id="personas" name="personas">
+                    <option value="2">2 personas</option>
+                    <option value="4">4 personas</option>
+                    <option value="6">6 personas</option>
+                    <option value="8" selected>8 personas (casa completa)</option>
+                </select>
+
+                <label for="mensaje">Comentarios o peticiones especiales:</label>
+                <textarea id="mensaje" name="mensaje" rows="4" placeholder="Indícanos si vienes con mascota o necesitas cuna..."></textarea>
+
+                <button type="submit">Enviar solicitud</button>
+            </form>
+        </section>
+
+        <section class="bloque-crema datos-contacto">
+            <h2>Dónde estamos</h2>
+            <p><strong>Dirección:</strong> Calle Real, 14, 40331 Valle de Tabladillo, Segovia</p>
+            <p><strong>Teléfono:</strong> +34 921 00 00 00</p>
+            <p><strong>Email:</strong> reservas@casaruraltabladillo.es</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Casa Rural El Mirador - Valle de Tabladillo, Segovia</p>
+    </footer>
+
+</body>
+</html>

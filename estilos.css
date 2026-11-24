@@ -1,0 +1,270 @@
+/* Reset básico y caja */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Fondo general con degradado suave */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #2f2f2f;
+    background: linear-gradient(135deg, #f6efe2 0%, #dcebd5 50%, #e4eef7 100%);
+    min-height: 100vh;
+}
+
+/* Cabecera con degradado verde bosque */
+header {
+    background: linear-gradient(to right, #1b4332, #2d6a4f, #40916c);
+    color: #ffffff;
+    text-align: center;
+    padding: 40px 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 8px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.35);
+}
+
+header p {
+    font-size: 1.1em;
+    color: #d8f3dc;
+}
+
+/* Menú de navegación clásico (inline-block) */
+nav {
+    background: linear-gradient(to right, #8c4a27, #b5651d);
+    text-align: center;
+    padding: 12px 0;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 12px;
+}
+
+nav ul li a {
+    display: inline-block;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 8px 18px;
+    border-radius: 20px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+nav ul li a:hover,
+nav ul li a.activo {
+    background-color: #f4a261;
+    color: #2b1a10;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
+}
+
+/* Contenedor principal */
+main {
+    max-width: 960px;
+    margin: 30px auto;
+    padding: 0 15px;
+}
+
+/* Secciones con fondos de colores diferenciados */
+section {
+    padding: 30px;
+    margin-bottom: 28px;
+    border-radius: 14px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+}
+
+.bloque-crema {
+    background: linear-gradient(180deg, #fffdf7 0%, #faebd7 100%);
+    border-left: 6px solid #d48c46;
+}
+
+.bloque-verde {
+    background: linear-gradient(180deg, #f1faee 0%, #d8f3dc 100%);
+    border-left: 6px solid #2d6a4f;
+}
+
+.bloque-azul {
+    background: linear-gradient(180deg, #f0f7ff 0%, #d6e9f8 100%);
+    border-left: 6px solid #3a7ca5;
+}
+
+section h2 {
+    color: #1b4332;
+    margin-bottom: 15px;
+    font-size: 1.7em;
+    border-bottom: 2px solid rgba(45, 106, 79, 0.25);
+    padding-bottom: 6px;
+}
+
+section p {
+    margin-bottom: 15px;
+}
+
+/* Imágenes */
+.imagen-principal {
+    display: block;
+    width: 100%;
+    max-width: 720px;
+    height: auto;
+    margin: 20px auto 5px auto;
+    border-radius: 12px;
+    border: 4px solid #ffffff;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Tarjetas en 3 columnas usando inline-block */
+.contenedor-tarjetas {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.tarjeta {
+    display: inline-block;
+    width: 30%;
+    vertical-align: top;
+    margin: 0 1.2% 15px 1.2%;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: left;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+.tarjeta h3 {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+
+.tarjeta-1 {
+    background-color: #ffffff;
+    border-top: 5px solid #40916c;
+}
+
+.tarjeta-2 {
+    background-color: #fff8eb;
+    border-top: 5px solid #e76f51;
+}
+
+.tarjeta-3 {
+    background-color: #eef6fb;
+    border-top: 5px solid #457b9d;
+}
+
+/* Lista de servicios */
+.lista-servicios {
+    margin: 15px 0 20px 25px;
+}
+
+.lista-servicios li {
+    margin-bottom: 8px;
+}
+
+/* Tabla de tarifas */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+thead {
+    background: linear-gradient(to right, #2d6a4f, #40916c);
+    color: #ffffff;
+}
+
+th, td {
+    padding: 14px 12px;
+    text-align: center;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f4faf6;
+}
+
+tbody tr:hover {
+    background-color: #ffe8d6;
+}
+
+/* Formulario de contacto */
+.formulario {
+    max-width: 600px;
+    margin: 20px auto 0 auto;
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+}
+
+.formulario label {
+    display: block;
+    font-weight: bold;
+    color: #1b4332;
+    margin-top: 12px;
+    margin-bottom: 5px;
+}
+
+.formulario input,
+.formulario select,
+.formulario textarea {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #b7c9bd;
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 1em;
+    background-color: #fbfdfb;
+}
+
+.formulario input:focus,
+.formulario select:focus,
+.formulario textarea:focus {
+    outline: none;
+    border-color: #2d6a4f;
+    box-shadow: 0 0 6px rgba(45, 106, 79, 0.3);
+}
+
+.formulario button {
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+    padding: 13px;
+    border: none;
+    border-radius: 8px;
+    background: linear-gradient(to right, #d96b27, #e9963e);
+    color: #ffffff;
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(217, 107, 39, 0.35);
+}
+
+.formulario button:hover {
+    background: linear-gradient(to right, #b8561b, #d97e26);
+}
+
+.datos-contacto p {
+    margin-bottom: 8px;
+}
+
+/* Pie de página */
+footer {
+    background: linear-gradient(to right, #1b4332, #2d6a4f);
+    color: #d8f3dc;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    font-size: 0.95em;
+}
